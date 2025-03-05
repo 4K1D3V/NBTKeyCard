@@ -1,0 +1,27 @@
+name: NBTKeyCard
+version: 1.0
+main: pro.akii.ks.core.nbtKeyCard.NBTKeyCard
+api-version: 1.21
+depend: [Vault]
+
+commands:
+  nbtkeycard:
+    description: Manages Access Key Cards for mines
+    usage: /<command> <give|gui|shop|show|mine>
+
+permissions:
+  nbtkeycard.give:
+    description: Allows giving key cards to players
+    default: op
+  nbtkeycard.gui:
+    description: Allows accessing the key card GUI
+    default: true
+  nbtkeycard.shop:
+    description: Allows accessing the key card shop
+    default: true
+  nbtkeycard.receive:
+    description: Allows receiving key cards via chat codes
+    default: true
+  nbtkeycard.admin:
+    description: Allows managing mines and showing boundaries
+    default: op

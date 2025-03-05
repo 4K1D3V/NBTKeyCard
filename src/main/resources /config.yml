@@ -1,0 +1,60 @@
+# ╔════════════════════════════════════════════════════╗
+# ║          NBTKeyCard Plugin Configuration           ║
+# ╚════════════════════════════════════════════════════╝
+#
+# Welcome to the heart of NBTKeyCard! Configure your mines below with finesse.
+# Should you stumble upon any glitches or quirks while exploring this plugin,
+# we’d love to hear from you! Please raise an issue on our GitHub:
+# ➜ https://github.com/4K1D3V/NBTKeyCard/issues
+#
+# Crafted with passion by Kite
+# Visit us at: https://ks.akii.pro
+# Enjoy a seamless mining adventure!
+
+mines:
+  mine1:
+    world: world
+    min:
+      x: 0
+      y: 0
+      z: 0
+    max:
+      x: 100
+      y: 100
+      z: 100
+    access: open
+  mine2:
+    world: world
+    min:
+      x: 101
+      y: 0
+      z: 0
+    max:
+      x: 200
+      y: 100
+      z: 100
+    access: restricted
+    required_nbt:
+      key: "access"
+      value: "mine2"
+    code: "mine2code"
+    shop_price: 100.0
+  mine3:
+    world: world_nether
+    min:
+      x: 201
+      y: 0
+      z: 0
+    max:
+      x: 300
+      y: 100
+      z: 100
+    access: restricted
+    required_nbt:
+      key: "access"
+      value: "mine3"
+    code: "mine3code"
+    shop_price: 150.0
+
+messages:
+  denial: "&cAccess Denied! You need a key card for this mine!"
